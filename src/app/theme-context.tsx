@@ -1,6 +1,6 @@
 "use client";
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
-import { themes } from "../themes/themes";
+import { themes } from "./themes/themes";
 
 type Theme = typeof themes[number];
 

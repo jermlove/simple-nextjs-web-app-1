@@ -1,5 +1,5 @@
 "use client";
-import { useTheme } from "../theme-context";
+import { useTheme } from "./theme-context";
 
 export function ThemeSwitcher() {
   const { theme, setThemeByName, themes } = useTheme();

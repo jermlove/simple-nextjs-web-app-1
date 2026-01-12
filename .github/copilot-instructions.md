@@ -1,3 +1,35 @@
+### Commit Message Conventions
+Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for all commit messages. This enables clear changelogs and automation.
+
+**Format:**
+```
+<type>[optional scope]: <description>
+
+[optional body]
+[optional footer(s)]
+```
+
+**Types:**
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation only changes
+- `style`: Formatting, missing semi colons, etc.
+- `refactor`: Code change that neither fixes a bug nor adds a feature
+- `perf`: Performance improvement
+- `test`: Adding or correcting tests
+- `build`: Changes to build process or dependencies
+- `ci`: Changes to CI configuration
+- `chore`: Other changes that don't modify src or test files
+- `revert`: Reverts a previous commit
+
+**Examples:**
+- `feat(theme): add new "Sapphire Explorer" theme`
+- `fix(auth): handle token refresh edge case`
+- `docs: update README with deployment steps`
+
+**Scope:** Use scope to indicate affected area (e.g. `auth`, `theme`, `nav`, `docs`).
+
+**Footer:** Use for breaking changes or referencing issues (e.g. `BREAKING CHANGE: ...`, `Closes #123`).
 <!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
 - [x] Verify that the copilot-instructions.md file in the .github directory is created.
 

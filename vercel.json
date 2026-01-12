@@ -4,10 +4,5 @@
   "installCommand": "npm install",
   "framework": "nextjs",
   "outputDirectory": ".next",
-  "regions": ["iad1"],
-  "env": {
-    "AUTH_MICROSOFT_ENTRA_ID_ID": "@azure_ad_client_id",
-    "AUTH_MICROSOFT_ENTRA_ID_ISSUER": "@azure_ad_authority",
-    "AUTH_MICROSOFT_ENTRA_ID_SECRET": "@azure_ad_redirect_uri"
-  }
+  "regions": ["iad1"]
 }

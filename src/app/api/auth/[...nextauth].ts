@@ -1,10 +1,10 @@
 import NextAuth from "next-auth";
 import type { NextAuthOptions } from "next-auth";
 
-// Replace these with your actual Entra External ID values
-const ENTRA_CLIENT_ID = process.env.ENTRA_CLIENT_ID || "YOUR_CLIENT_ID";
-const ENTRA_CLIENT_SECRET = process.env.ENTRA_CLIENT_SECRET || "YOUR_CLIENT_SECRET";
-const ENTRA_ISSUER = process.env.ENTRA_ISSUER || "https://login.microsoftonline.com/YOUR_TENANT_ID/v2.0";
+// Use .env.local variable names for Microsoft Entra External ID
+const ENTRA_CLIENT_ID = process.env.AUTH_MICROSOFT_ENTRA_ID_ID || "YOUR_CLIENT_ID";
+const ENTRA_CLIENT_SECRET = process.env.AUTH_MICROSOFT_ENTRA_ID_SECRET || "YOUR_CLIENT_SECRET";
+const ENTRA_ISSUER = process.env.AUTH_MICROSOFT_ENTRA_ID_ISSUER || "https://login.microsoftonline.com/YOUR_TENANT_ID/v2.0";
 
 export const authConfig: NextAuthOptions = {
   providers: [

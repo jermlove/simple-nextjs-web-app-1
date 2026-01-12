@@ -1,0 +1,19 @@
+# Vercel configuration for Next.js app
+
+# Build & output settings
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# Environment variables (set these in Vercel dashboard for security)
+# ENTRA_CLIENT_ID=your-entra-client-id
+# ENTRA_CLIENT_SECRET=your-entra-client-secret
+# ENTRA_ISSUER=https://login.microsoftonline.com/<tenant-id>/v2.0
+
+# Next.js output directory
+[output]
+  directory = ".next"
+
+# Ignore test and storybook files
+[ignore]
+  files = ["**/*.test.*", "**/*.spec.*", "**/*.stories.*"]
